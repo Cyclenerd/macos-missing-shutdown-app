@@ -14,7 +14,7 @@ For example, if you copy these apps to your application folder, you can use Spot
 
 ## Installation
 
-[![Download](https://www.nkn-it.de/img/download_button_200px.png)](https://github.com/Cyclenerd/macos-missing-shutdown-app/raw/master/Apps.zip)
+[![Download](https://www.nkn-it.de/img/download_button_200px.png)](https://github.com/Cyclenerd/macos-missing-shutdown-app/releases/download/v1.0/Apps.zip)
 
 Just download `Apps.zip` and copy the apps into your application (`~/Applications`) folder.
 

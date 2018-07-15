@@ -9,7 +9,7 @@ I built four simple Apple Automator apps:
 
 For example, if you copy these apps to your application folder, you can use Spotlight Search to shut down your Mac.
 
-![Spotlight](shutdown-spotlight.png)
+![Spotlight](images/shutdown-spotlight.png)
 
 
 ## Installation
@@ -60,7 +60,7 @@ You can set the icon again:
 
 ```
 rm "~/Applications/Log Out.app/Icon"*
-cp icons/logout.icns "~/Applications/Log Out.app/Contents/Resources/AutomatorApplet.icns"
+cp images/logout.icns "~/Applications/Log Out.app/Contents/Resources/AutomatorApplet.icns"
 ```
 
 ## License

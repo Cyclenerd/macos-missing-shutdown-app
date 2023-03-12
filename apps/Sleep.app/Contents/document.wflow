@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.7</string>
+	<string>520</string>
 	<key>AMApplicationVersion</key>
-	<string>2.8</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -68,15 +68,15 @@
 				<key>Class Name</key>
 				<string>RunScriptAction</string>
 				<key>InputUUID</key>
-				<string>778D71BD-ABD9-4D0F-B9B9-AA01899B26EC</string>
+				<string>883FB584-B8FC-4320-88E9-6D8D31CEA581</string>
 				<key>Keywords</key>
 				<array>
 					<string>Run</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>8CDCA093-1B2D-4C44-BFD7-79A12E801CE1</string>
+				<string>A863DFB3-9BD5-45C6-84BC-AE6B22286E61</string>
 				<key>UUID</key>
-				<string>95A56F8F-3864-4682-B077-0C95FA0A8FF7</string>
+				<string>58AF6415-FF3A-4CC7-BDBC-A57B474320BD</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -103,14 +103,14 @@ end run</string>
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<integer>1</integer>
 				<key>location</key>
-				<string>309.000000:316.000000</string>
+				<string>769.000000:315.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>connectors</key>

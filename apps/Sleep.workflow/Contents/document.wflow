@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell app "System Events" to log outline</string>
+					<string>tell application "System Events" to sleep</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -68,15 +68,15 @@
 				<key>Class Name</key>
 				<string>RunScriptAction</string>
 				<key>InputUUID</key>
-				<string>4C79E7DC-E82C-4E83-AF79-E41B42615117</string>
+				<string>883FB584-B8FC-4320-88E9-6D8D31CEA581</string>
 				<key>Keywords</key>
 				<array>
 					<string>Run</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>177C9B4A-E3EF-4F79-ACCF-93ACF92F33AD</string>
+				<string>A863DFB3-9BD5-45C6-84BC-AE6B22286E61</string>
 				<key>UUID</key>
-				<string>431642E4-28B8-4922-83B5-B10DE8DE8517</string>
+				<string>58AF6415-FF3A-4CC7-BDBC-A57B474320BD</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>

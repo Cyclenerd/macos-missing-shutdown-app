@@ -1,6 +1,6 @@
 # macOS Shutdown, Restart, Sleep and Log Out App
 
-[![Bagde: Apple](https://img.shields.io/badge/Apple-000000.svg?logo=apple&logoColor=white)](https://github.com/Cyclenerd/macos-missing-shutdown-app#readme)
+[![Badge: Apple](https://img.shields.io/badge/Apple-000000.svg?logo=apple&logoColor=white)](https://github.com/Cyclenerd/macos-missing-shutdown-app#readme)
 
 Four simple Apple Automator apps:
 

@@ -11,12 +11,12 @@ Four simple Apple Automator apps:
 
 Copy these apps to your application folder. Use Spotlight Search to shut down your Mac.
 
-![Spotlight](images/shutdown-spotlight.png)
+![Screenshot: Spotlight](images/shutdown-spotlight.png)
 
 
 ## Installation
 
-[![Download](https://www.nkn-it.de/img/download_button_200px.png)](https://github.com/Cyclenerd/macos-missing-shutdown-app/releases/download/v1.1/Apps.zip)
+[![Download: Apps.zip](https://www.nkn-it.de/img/download_button_200px.png)](https://github.com/Cyclenerd/macos-missing-shutdown-app/releases/download/v1.1/Apps.zip)
 
 Just download [`Apps.zip`](https://github.com/Cyclenerd/macos-missing-shutdown-app/releases/download/v1.1/Apps.zip) and copy the apps into your application (`~/Applications`) folder.
 

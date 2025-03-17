@@ -6,6 +6,8 @@
 
 **A simple, elegant macOS utility to control system power functions like shutdown, restart, sleep and log out with keyboard shortcuts.**
 
+![Screenshot](./images/shutdown.png)
+
 `Shutdown.app` is a lightweight utility that provides quick access to common system power functions.
 With simple keyboard shortcuts and an intuitive interface, you can sleep, restart, shut down, or log out of your Mac with a single keystroke.
 

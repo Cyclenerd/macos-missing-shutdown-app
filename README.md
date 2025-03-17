@@ -31,7 +31,7 @@ It uses native macOS UI components for a seamless experience that integrates per
 
 ## Installation
 
-1. Download the latest release from the Releases page
+1. [Download](https://github.com/Cyclenerd/macos-missing-shutdown-app/releases/latest/) the latest release
 1. Drag the app to your Applications folder
 1. Launch the app from Launchpad or Applications folder
 

@@ -40,8 +40,8 @@ Tip: Use Spotlight Search and type `Shutdown` to sleep, restart, shut down, or l
 ## Usage
 
 1. Launch the app
-1. Select an action using your mouse or keyboard
-1. Press Enter to confirm, or use the keyboard shortcuts:
+1. Select an action using your mouse or keyboard (<kbd>tab</kbd>, <kbd>←</kbd>, <kbd>↑</kbd>, <kbd>→</kbd>, <kbd>↓</kbd>)
+1. Press <kbd>Enter</kbd> to confirm, or use the keyboard shortcuts:
     * <kbd>⌘</kbd> + <kbd>Z</kbd> for Sleep 💤
     * <kbd>⌘</kbd> + <kbd>R</kbd> for Restart
     * <kbd>⌘</kbd> + <kbd>S</kbd> for Shut Down
@@ -76,10 +76,9 @@ open Shutdown.xcodeproj
 
 Build the project:
 
-Select `Product` > `Build` from the menu
-Or use the keyboard shortcut <kbd>⌘</kbd> + <kbd>B</kbd>
+Select `Product` > `Build` from the menu or use the keyboard shortcut <kbd>⌘</kbd> + <kbd>B</kbd>
 
-Or via CLI:
+Or build the project via CLI:
 
 ```bash
 sudo xcode-select --switch "/Applications/Xcode.app"

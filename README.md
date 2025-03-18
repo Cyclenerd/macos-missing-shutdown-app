@@ -32,8 +32,13 @@ It uses native macOS UI components for a seamless experience that integrates per
 ## Installation
 
 1. [Download](https://github.com/Cyclenerd/macos-missing-shutdown-app/releases/latest/) the latest release
-1. Drag the app to your Applications folder
+1. Extract the ZIP file and drag the app to your Applications folder
 1. Launch the app from Launchpad or Applications folder
+1. (Optional) Allow unsigned app on macOS
+    * Go to System Settings
+    * Click on Privacy & Security
+    * Scroll down to Security section
+    * Look for a message about the blocked `Shutdown.app` app and click "Open Anyway"
 
 Tip: Use Spotlight Search and type `Shutdown` to sleep, restart, shut down, or log out of your Mac.
 

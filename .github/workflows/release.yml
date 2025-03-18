@@ -1,0 +1,43 @@
+name: Release macOS App
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    name: Build and Release
+    # https://github.com/actions/runner-images/blob/main/images/macos/macos-14-Readme.md
+    runs-on: macos-14
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Xcode
+      # https://github.com/actions/runner-images/blob/main/images/macos/macos-14-Readme.md#xcode
+      # https://developer.apple.com/library/archive/technotes/tn2339/_index.html
+      run: sudo xcode-select --switch "/Applications/Xcode_16.2.0.app"
+
+    - name: Show Xcode version
+      run: xcodebuild -version
+
+    - name: Show available destinations
+      run: xcodebuild -showdestinations -scheme "Shutdown"
+
+    - name: Build for macOS
+      run: xcodebuild clean build -scheme "Shutdown" -destination "platform=macOS" CODE_SIGN_IDENTITY=""
+
+    - name: Archive app
+      run: xcodebuild archive -scheme "Shutdown" -destination "platform=macOS" -archivePath ./build/Shutdown.xcarchive CODE_SIGN_IDENTITY=""
+
+    - name: Create zip archive
+      run: ditto -c -k --keepParent ./build/Shutdown.xcarchive/Products/Applications/Shutdown.app ./Shutdown.zip
+
+    # Release, upload files
+    # https://github.com/softprops/action-gh-release
+    - name: Release zip archive with app
+      uses: softprops/action-gh-release@v2.2.1
+      with:
+        files: Shutdown.zip

@@ -1,0 +1,38 @@
+# .gitignore for Xcode 16
+
+# macOS Files
+# Ignore system-generated files specific to macOS.
+.DS_Store
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Xcode
+# Exclude user-specific and build-related files.
+**/xcuserdata/
+
+# Swift Package Manager
+# Ignore Swift Package Manager build files and package resolution.
+.build/
+.swiftpm/
+Package.resolved
+
+# Archives
+# Ignore Xcode archive files.
+*.xcarchive
+
+# Bundler
+# Ignore Bundler files.
+.bundle/
+
+# Logs
+# Exclude log files.
+*.log
+*.xcresult
+
+# Temporary and Backup Files
+# Ignore temporary, swap, and backup files.
+*.tmp
+*.swp
+*~.nib
+*.bak

@@ -1,0 +1,44 @@
+name: Build macOS App
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    # https://github.com/actions/runner-images/blob/main/images/macos/macos-14-Readme.md
+    runs-on: macos-14
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Xcode
+      # https://github.com/actions/runner-images/blob/main/images/macos/macos-14-Readme.md#xcode
+      # https://developer.apple.com/library/archive/technotes/tn2339/_index.html
+      run: sudo xcode-select --switch "/Applications/Xcode_16.2.0.app"
+
+    - name: Show Xcode version
+      run: xcodebuild -version
+
+    - name: Show available destinations
+      run: xcodebuild -showdestinations -scheme "Shutdown"
+
+    - name: Build for macOS
+      run: xcodebuild clean build -scheme "Shutdown" -destination "platform=macOS" CODE_SIGN_IDENTITY=""
+
+    - name: Archive app
+      run: xcodebuild archive -scheme "Shutdown" -destination "platform=macOS" -archivePath ./build/Shutdown.xcarchive CODE_SIGN_IDENTITY=""
+      
+    - name: Upload build artifacts
+      # https://github.com/marketplace/actions/upload-a-build-artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Shutdown-app
+        path: ./build/SystemControl.xcarchive/Products/Applications/Shutdown.app
+        if-no-files-found: error
+        retention-days: 7

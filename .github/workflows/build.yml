@@ -36,7 +36,7 @@ jobs:
       
     - name: Upload build artifacts
       # https://github.com/marketplace/actions/upload-a-build-artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Shutdown-app
         path: ./build/SystemControl.xcarchive/Products/Applications/Shutdown.app

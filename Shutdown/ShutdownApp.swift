@@ -169,14 +169,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         print("Application did finish launching")
 
-        // Request necessary permissions if needed
-        let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true]
-        let accessEnabled = AXIsProcessTrustedWithOptions(options)
-        
-        if !accessEnabled {
-            print("Accessibility permissions are required for this app to function properly.")
-        }
-        
         // Set the app to terminate when the last window closes
         NSApp.setActivationPolicy(.regular)
         

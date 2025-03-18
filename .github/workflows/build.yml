@@ -39,6 +39,6 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Shutdown-app
-        path: ./build/Shutdown.xcarchive/Products/Applications/Shutdown.app
+        path: ./build/Shutdown.xcarchive/Products/Applications
         if-no-files-found: error
         retention-days: 7

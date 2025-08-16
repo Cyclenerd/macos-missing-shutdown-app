@@ -130,34 +130,62 @@ struct ContentView: View {
     }
     
     private func handleRightArrowKey() {
-        if focusedAction == .sleepComputer {
+        switch focusedAction {
+        case .sleepComputer:
             focusedAction = .restartComputer
-        } else if focusedAction == .shutdownComputer {
+        case .restartComputer:
+            focusedAction = .sleepComputer
+        case .shutdownComputer:
             focusedAction = .logoutUser
+        case .logoutUser:
+            focusedAction = .shutdownComputer
+        case .none:
+            focusedAction = .sleepComputer
         }
     }
     
     private func handleLeftArrowKey() {
-        if focusedAction == .restartComputer {
+        switch focusedAction {
+        case .sleepComputer:
+            focusedAction = .restartComputer
+        case .restartComputer:
             focusedAction = .sleepComputer
-        } else if focusedAction == .logoutUser {
+        case .shutdownComputer:
+            focusedAction = .logoutUser
+        case .logoutUser:
             focusedAction = .shutdownComputer
+        case .none:
+            focusedAction = .sleepComputer
         }
     }
     
     private func handleUpArrowKey() {
-        if focusedAction == .shutdownComputer {
+        switch focusedAction {
+        case .sleepComputer:
+            focusedAction = .shutdownComputer
+        case .restartComputer:
+            focusedAction = .logoutUser
+        case .shutdownComputer:
             focusedAction = .sleepComputer
-        } else if focusedAction == .logoutUser {
+        case .logoutUser:
             focusedAction = .restartComputer
+        case .none:
+            focusedAction = .sleepComputer
         }
     }
     
     private func handleDownArrowKey() {
-        if focusedAction == .sleepComputer {
+        switch focusedAction {
+        case .sleepComputer:
             focusedAction = .shutdownComputer
-        } else if focusedAction == .restartComputer {
+        case .restartComputer:
             focusedAction = .logoutUser
+        case .shutdownComputer:
+            focusedAction = .sleepComputer
+        case .logoutUser:
+            focusedAction = .restartComputer
+        case .none:
+            focusedAction = .sleepComputer
         }
     }
 }

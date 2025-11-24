@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: Set up Xcode
       # https://github.com/actions/runner-images/blob/main/images/macos/macos-14-Readme.md#xcode
